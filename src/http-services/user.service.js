@@ -15,6 +15,10 @@ class UserService {
     updateProfile(data) {
         return http.put('/user/me', data);
     }
+
+    getConversations() {
+        return http.get(`/v2/user/me/conversation`);
+    }
 }
 
 export default new UserService();

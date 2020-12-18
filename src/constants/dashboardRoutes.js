@@ -2,6 +2,7 @@ import React from "react";
 import Dashboard from "../views/Dashboard/Dashboard";
 import Quota from "../views/Quota/Quota";
 import Profile from "../views/Profile/Profile";
+import Conversations from "../views/Conversations/Conversations";
 import { i18n } from "../utils/i18n";
 import Sponsorship from "../views/Sponsorship/Sponsorship";
 
@@ -23,6 +24,12 @@ const dashboardRoutes = [
     title: i18n._("Profile"),
     path: "/profile",
     component: <Profile />
+  },
+  {
+    name: i18n._("Conversations"),
+    title: i18n._("Converstions"),
+    path: "/conversations",
+    component: <Conversations />
   },
   {
     name: i18n._("Sponsorship"),
