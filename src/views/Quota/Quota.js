@@ -15,23 +15,24 @@ import {TextField} from "@material-ui/core";
 import Divider from "@material-ui/core/Divider";
 import ContactService from '../../http-services/contact.service';
 import Alert from "../../components/Alert/Alert";
+import { formatSeconds } from '../../utils/common';
 
 const Quota = (props) => {
     const [loading, setLoading] = useState(false);
-    const [license, setLicense] = useState(null);
-    const [usage, setUsage] = useState(null);
+    const [licenses, setLicenses] = useState([]);
+    const [solde, setSolde] = useState(0);
     const [contactModalOpen, setContactModalOpen] = useState(false);
     const alertRef = useRef();
     const modalAlertRef = useRef();
 
     const getUsageDetails = () => {
-        setLicense(null);
-        setUsage(null);
+        setLicenses([]);
+        setSolde(0);
         UserService.getUsageDetails()
             .then(response => {
                 console.log(response.data);
-                setUsage(response.data.usage);
-                setLicense(response.data.user.license);
+                setSolde(response.data.solde);
+                setLicenses(response.data.licenses);
             })
             .catch(error => {
                 if (error.response) {
@@ -46,8 +47,8 @@ const Quota = (props) => {
         getUsageDetails();
     }, []);
 
-    const formatMs = (ms) => {
-        let tempTime = moment.duration(ms);
+    const formatMs = (s) => {
+        let tempTime = moment.duration(s,'seconds');
         if (tempTime.hours() <= 0) {
             return tempTime.minutes() + 'min';
         } else {
@@ -72,6 +73,7 @@ const Quota = (props) => {
                 setLoading(false);
             });
     }
+
 
     return (
         <div>
@@ -104,18 +106,25 @@ const Quota = (props) => {
                         </form>
                     )}/>
             </Modal>
-            {usage && license ?
-                <Paper>
-                    <Box p={2}>
-                        <Button onClick={getUsageDetails}>
-                            <RefreshIcon/> <Trans>Refresh</Trans>
-                        </Button>
-                        <h3>{license.title}</h3>
-                        <h5 className='mb-4'><Trans>Remaining:</Trans> {formatMs(usage.currentLeft)} (<Trans>Quota:</Trans> {formatMs(license.quota)})</h5>
-                        <LinearProgressWithLabel value={usage.currentLeft / license.quota * 100}/>
-                        <Trans>Need more time?</Trans> <Button onClick={() => setContactModalOpen(true)}><Trans>Contact Us</Trans></Button>
-                    </Box>
-                </Paper>
+            {licenses ?
+                <div>
+                    <Button onClick={getUsageDetails}>
+                        <RefreshIcon/> <Trans>Refresh</Trans>
+                    </Button>
+                    
+                    {licenses.map((item)=>
+                        <Paper>
+                            <Box p={2}>
+                                <h3>{item.license.title}</h3>
+                                <h5 className='mb-4'><Trans>Remaining:</Trans> {formatSeconds(item.solde,['H','m','s'])} (<Trans>Quota:</Trans> {formatSeconds(item.license.quota,['H','m'])})</h5>
+                                <LinearProgressWithLabel value={item.solde > 0 ? ( item.solde / item.license.quota * 100 ) : 0 }/>
+                            </Box>
+                        </Paper>
+                    )}
+
+                    <Trans>Need more time?</Trans> <Button onClick={() => setContactModalOpen(true)}><Trans>Contact Us</Trans></Button>
+                </div>
+               
             :
                 <div>
                     Loading

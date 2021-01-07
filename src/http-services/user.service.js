@@ -9,7 +9,7 @@ class UserService {
     }
 
     getUsageDetails() {
-        return http.get('/user/me/usage');
+        return http.get('/v2/user/me/usage');
     }
 
     updateProfile(data) {
@@ -18,6 +18,10 @@ class UserService {
 
     getConversations() {
         return http.get(`/v2/user/me/conversation`);
+    }
+
+    changePassword(data) {
+        return http.put('/user/me/change-password', data);
     }
 }
 

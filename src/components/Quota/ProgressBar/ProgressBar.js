@@ -12,7 +12,7 @@ const LinearProgressWithLabel = (props) => {
                     <LinearProgress variant="determinate" {...props} />
                 </Box>
             </Paper>
-            {props.value &&
+            {
                 <Box minWidth={35}>
                     <Typography variant="h5" color="textSecondary" style={{ marginLeft: 10 }}>{Math.round(props.value)}%</Typography>
                 </Box>

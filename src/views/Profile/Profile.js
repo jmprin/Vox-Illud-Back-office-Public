@@ -12,6 +12,7 @@ import UserService from "../../http-services/user.service";
 import {i18n} from "../../utils/i18n";
 import {Trans} from "@lingui/macro";
 import UpdateProfileForm from "../../components/Forms/Profile/UpdateProfileForm";
+import ChangePasswordForm from "../../components/Forms/Profile/ChangePasswordForm";
 
 const Profile = (props) => {
     const [loading, setLoading] = useState(false);
@@ -53,11 +54,30 @@ const Profile = (props) => {
             })
     }
 
+    const changePassword = values => {
+        setLoading(true);
+        UserService.changePassword(values)
+            .then(response => {
+                alertRef.current.toggle('success', 'The user has been updated');
+                setUser(response.data);
+                setLoading(false);
+            })
+            .catch(error => {
+                if (error.response) {
+                    alertRef.current.toggle('error', error.response.data.message);
+                } else {
+                    alertRef.current.toggle('error', error);
+                }
+                setLoading(false);
+            })
+    }
+
     return (
         <>
             <BackdropLoader open={loading}/>
             <Alert ref={alertRef}/>
             <UpdateProfileForm initialValues={user} onSubmit={updateUser} />
+            <ChangePasswordForm  onSubmit={changePassword} />
         </>
     );
 }

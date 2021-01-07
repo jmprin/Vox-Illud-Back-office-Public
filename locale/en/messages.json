@@ -1,0 +1,512 @@
+{
+  "Ancien mot de passe": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Profile/ChangePasswordForm.js",
+        22
+      ]
+    ]
+  },
+  "Change password": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Profile/ChangePasswordForm.js",
+        49
+      ]
+    ]
+  },
+  "Confirmer le nouveau mot de passe": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Profile/ChangePasswordForm.js",
+        40
+      ]
+    ]
+  },
+  "Contact Us": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        125
+      ]
+    ]
+  },
+  "Conversations": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        29
+      ],
+      [
+        "src/views/Conversations/Conversations.js",
+        62
+      ]
+    ]
+  },
+  "Converstions": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        30
+      ]
+    ]
+  },
+  "Create my account": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        63
+      ]
+    ]
+  },
+  "Dashboard": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        11
+      ],
+      [
+        "src/constants/dashboardRoutes.js",
+        12
+      ]
+    ]
+  },
+  "Durée réelle": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        52
+      ]
+    ]
+  },
+  "Début": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        50
+      ]
+    ]
+  },
+  "E-Mail": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignInForm.js",
+        18
+      ],
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        42
+      ],
+      [
+        "src/components/Forms/Profile/UpdateProfileForm.js",
+        38
+      ]
+    ]
+  },
+  "E-Mail of the person you want to sponsor": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        81
+      ]
+    ]
+  },
+  "Enter the E-mail adress of the person you want to sponsor, a mail will be sent to his/her mailbox": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        72
+      ]
+    ]
+  },
+  "Fin": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        51
+      ]
+    ]
+  },
+  "First Name": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        24
+      ],
+      [
+        "src/components/Forms/Profile/UpdateProfileForm.js",
+        20
+      ]
+    ]
+  },
+  "Go to Portal": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Home/Home.js",
+        37
+      ]
+    ]
+  },
+  "Home": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/routes.js",
+        10
+      ]
+    ]
+  },
+  "ID": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        49
+      ]
+    ]
+  },
+  "In order to sponsor someone, you have to:": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        70
+      ]
+    ]
+  },
+  "Last Name": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        33
+      ],
+      [
+        "src/components/Forms/Profile/UpdateProfileForm.js",
+        29
+      ]
+    ]
+  },
+  "Loading...": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        96
+      ]
+    ]
+  },
+  "Login": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignInForm.js",
+        41
+      ]
+    ]
+  },
+  "My Sponsored Users": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        93
+      ]
+    ]
+  },
+  "Need more time?": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        125
+      ]
+    ]
+  },
+  "Nouveau mot de passe": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Profile/ChangePasswordForm.js",
+        31
+      ]
+    ]
+  },
+  "Once the person has clicked your link, his/her account will be recognized as one of the person you sponsored, and you both will benefit from advantages such as bonus quota, or discounts.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        73
+      ]
+    ]
+  },
+  "Password": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignInForm.js",
+        25
+      ],
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        49
+      ]
+    ]
+  },
+  "Password Again": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignUpForm.js",
+        56
+      ]
+    ]
+  },
+  "Profile": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        23
+      ],
+      [
+        "src/constants/dashboardRoutes.js",
+        24
+      ]
+    ]
+  },
+  "Quota": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        17
+      ],
+      [
+        "src/constants/dashboardRoutes.js",
+        18
+      ],
+      [
+        "src/views/Quota/Quota.js",
+        86
+      ]
+    ]
+  },
+  "Quota:": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        118
+      ]
+    ]
+  },
+  "Refresh": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        111
+      ],
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        94
+      ]
+    ]
+  },
+  "Remaining:": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        118
+      ]
+    ]
+  },
+  "Remember me": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Auth/SignInForm.js",
+        33
+      ],
+      [
+        "src/components/Forms/Auth/SignInForm.js",
+        38
+      ]
+    ]
+  },
+  "Return to dashboard": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/ConfirmSponsor/ConfirmSponsor.js",
+        117
+      ]
+    ]
+  },
+  "Send": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        104
+      ]
+    ]
+  },
+  "Sign In": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/routes.js",
+        16
+      ]
+    ]
+  },
+  "Sign Up": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/routes.js",
+        21
+      ]
+    ]
+  },
+  "Sponsor": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        87
+      ]
+    ]
+  },
+  "Sponsor Confirmation": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/routes.js",
+        26
+      ]
+    ]
+  },
+  "Sponsor confirmed": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/ConfirmSponsor/ConfirmSponsor.js",
+        114
+      ]
+    ]
+  },
+  "Sponsorship": {
+    "translation": "",
+    "origin": [
+      [
+        "src/constants/dashboardRoutes.js",
+        35
+      ],
+      [
+        "src/constants/dashboardRoutes.js",
+        36
+      ]
+    ]
+  },
+  "Subject": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        90
+      ]
+    ]
+  },
+  "The Sponsorship System": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        68
+      ]
+    ]
+  },
+  "The content of your mail": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Quota/Quota.js",
+        97
+      ]
+    ]
+  },
+  "Update my Profile": {
+    "translation": "",
+    "origin": [
+      [
+        "src/components/Forms/Profile/UpdateProfileForm.js",
+        45
+      ]
+    ]
+  },
+  "Welcome to the {0} Portal": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Auth/signIn.js",
+        70
+      ],
+      [
+        "src/views/Dashboard/Dashboard.js",
+        12
+      ],
+      [
+        "src/views/Home/Home.js",
+        32
+      ]
+    ]
+  },
+  "You are now sponsored by": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/ConfirmSponsor/ConfirmSponsor.js",
+        45
+      ]
+    ]
+  },
+  "You have to sign in to continue": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Auth/signIn.js",
+        71
+      ]
+    ]
+  },
+  "{0} offers you the possibility to sponsor a particular user. This allows the person to join our launching program and benefit from advantages once the fully-featured commercial edition launches.": {
+    "translation": "",
+    "origin": [
+      [
+        "src/views/Sponsorship/Sponsorship.js",
+        69
+      ]
+    ]
+  }
+}

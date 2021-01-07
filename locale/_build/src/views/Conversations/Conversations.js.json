@@ -1,0 +1,42 @@
+{
+  "ID": {
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        49
+      ]
+    ]
+  },
+  "Début": {
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        50
+      ]
+    ]
+  },
+  "Fin": {
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        51
+      ]
+    ]
+  },
+  "Durée réelle": {
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        52
+      ]
+    ]
+  },
+  "Conversations": {
+    "origin": [
+      [
+        "src/views/Conversations/Conversations.js",
+        62
+      ]
+    ]
+  }
+}
