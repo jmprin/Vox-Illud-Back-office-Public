@@ -1,7 +1,11 @@
 import http from './http-common';
 class ContactService {
-    sendMail(data) {
-        return http.post('/contact/mail', data);
+    sendMailQuota(data) {
+        return http.post('/contact/mail/quota', data);
+    }
+
+    sendMailAccount(data) {
+        return http.post('/contact/mail/account', data);
     }
 }
 

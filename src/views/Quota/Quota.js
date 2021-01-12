@@ -47,18 +47,10 @@ const Quota = (props) => {
         getUsageDetails();
     }, []);
 
-    const formatMs = (s) => {
-        let tempTime = moment.duration(s,'seconds');
-        if (tempTime.hours() <= 0) {
-            return tempTime.minutes() + 'min';
-        } else {
-            return tempTime.hours() + (tempTime.minutes() > 0 ? ':' + tempTime.minutes() : 'h');
-        }
-    }
-
+   
     const sendMail = values => {
         setLoading(true);
-        ContactService.sendMail(values)
+        ContactService.sendMailQuota(values)
             .then(response => {
                 alertRef.current.toggle('success', 'Mail sent!');
                 setLoading(false);
