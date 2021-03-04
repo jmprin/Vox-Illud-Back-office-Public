@@ -5,6 +5,7 @@ import UserService from '../../http-services/user.service';
 import {i18n} from "../../utils/i18n";
 import {default as MaterialTable} from "../../components/MaterialTable/MaterialTable";
 import makeStyles from "@material-ui/core/styles/makeStyles";
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 
 const useStyles = makeStyles({
     root: {
@@ -44,6 +45,29 @@ const Conversation = (props) => {
         getConversations();
     }, []);
 
+    const downloadFile = (data) => {
+        console.log(data);
+        UserService.downloadFile(data).then((response) => {
+
+            const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', `${data.conversationId}.txt`);
+            document.body.appendChild(link);
+            link.click();
+          })
+          .catch((err)=>{
+               alert('Le fichier n\'existe pas.')
+          });
+    }
+
+    const actions = [
+        {
+            icon: CloudDownloadIcon,
+            tooltip: 'Télécharger conversation',
+            onClick: (event, rowData) => downloadFile(rowData)
+        }   
+    ]
 
     const columns = [
         { field: 'conversationId', title: i18n._("ID"), minWidth: 120 },
@@ -60,6 +84,7 @@ const Conversation = (props) => {
                 columns={columns}
                 data={conversations}
                 title={i18n._("Conversations")}
+                actions={actions}
             />
         </div>
     );

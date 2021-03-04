@@ -23,6 +23,13 @@ class UserService {
     changePassword(data) {
         return http.put('/user/me/change-password', data);
     }
+
+    async downloadFile(data) {
+        return http.get(`/session/${data._id}/download`,{
+            method: 'GET',
+            responseType: 'blob', // important
+          });
+    }
 }
 
 export default new UserService();
